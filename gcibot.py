@@ -74,7 +74,7 @@ class GCIBot(irc.IRCClient):
                 self.msg(channel, A['title'])
                 if 'hours' in A:
                     self.msg(channel, 'Status: ' + A['status'] +
-                        ' ({hours} hours, {minutes} minutes left)'.format(
+                        ' ({hours} days, {minutes} hours left)'.format(
                             hours=A['hours'], minutes=A['minutes']))
                 else:
                     self.msg(channel, 'Status: ' + A['status'])
